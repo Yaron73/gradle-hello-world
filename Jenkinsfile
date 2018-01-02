@@ -13,6 +13,7 @@ node('slave1') {
       // **       in the global configuration.
       def gradleHome = tool 'gradle4'
       // Run the maven build
-      sh "${gradleHome}/bin/gradle build"
+      //sh "${gradleHome}/bin/gradle build"
+      sh "${gradle4}/bin/gradle clean jar"
    }
 }
